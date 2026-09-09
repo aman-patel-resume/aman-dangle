@@ -1,0 +1,74 @@
+{
+  "name": "lucky-dangle",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Interactive physics-based hanging charm widget with a desktop overlay (Electron).",
+  "author": "You",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron:dev": "concurrently -k \"npm run dev\" \"wait-on http-get://localhost:8080 && cross-env VITE_DEV_SERVER_URL=http://localhost:8080 electron .\"",
+    "electron:build": "npm run build && electron-builder"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "concurrently": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "electron": "^31.7.7",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.5.4",
+    "vite": "^8.2.2",
+    "wait-on": "^8.0.1"
+  },
+  "dependencies": {
+    "@radix-ui/react-label": "^2.1.15",
+    "@radix-ui/react-slider": "^1.4.7",
+    "@radix-ui/react-switch": "^1.3.7",
+    "@tailwindcss/vite": "^4.3.3",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.39.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss": "^4.3.3",
+    "zustand": "^5.0.0"
+  },
+  "build": {
+    "appId": "com.luckydangle.overlay",
+    "productName": "LuckyDangle",
+    "asar": true,
+    "files": [
+      "dist/**/*",
+      ".output/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": [
+        "dir",
+        "portable"
+      ]
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ]
+    }
+  },
+  "allowScripts": {
+    "electron@31.7.7": true
+  }
+}
