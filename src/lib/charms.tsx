@@ -134,7 +134,7 @@ export const CHARMS: CharmConfig[] = [
         origin: "IRELAND AND CELTIC TRADITIONS",
         description: "One leaf for faith, one for hope, one for love, and one for luck. A rare find kept close.",
         actionLabel: "Find a little luck",
-        previewImage: "./charms/clover.png",
+        previewImage: "./charms/four_leave.png",
         threadPassesThrough: true,
         threadThroughLength: 52,
         anchorOffsetY: 0,
@@ -142,7 +142,7 @@ export const CHARMS: CharmConfig[] = [
             { src: "", width: 10, height: 10, offsetY: 0, type: "bead-white" },
             { src: "", width: 14, height: 14, offsetY: 12, type: "bead-mini-clover" },
             { src: "", width: 10, height: 10, offsetY: 28, type: "bead-white" },
-            { src: "./charms/clover.png", width: 72, height: 72, offsetY: 42, type: "image" },
+            { src: "./charms/four_leave.png", width: 72, height: 72, offsetY: 42, type: "image" },
         ],
     },
     {
