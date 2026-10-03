@@ -1,10 +1,10 @@
-# 🍀 LuckyDangle
+# 🍀 Aman Dangle
 
 A physics-based interactive hanging charm desktop widget — built with React, Vite, and Electron.
 
 Your charm sits in a transparent overlay on top of your desktop. Grab it, swing it, hover over it, and watch it react with real rope physics.
 
-![LuckyDangle](public/icon.png)
+![Aman Dangle](public/icon.png)
 
 ---
 
@@ -24,7 +24,7 @@ Your charm sits in a transparent overlay on top of your desktop. Grab it, swing 
 ## 🚀 For End Users (Just want to use the app)
 
 1. Go to the [**Releases**](../../releases) page
-2. Download `LuckyDangle-Setup.exe` (or the portable `.exe`)
+2. Download `AmanDangle-Setup.exe` (or the portable `.exe`)
 3. Run it — no install required for the portable version
 
 ---
@@ -39,8 +39,8 @@ Your charm sits in a transparent overlay on top of your desktop. Grab it, swing 
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/lucky-dangle.git
-cd lucky-dangle
+git clone https://github.com/YOUR_USERNAME/aman-dangle.git
+cd aman-dangle
 
 # Install dependencies
 npm install
@@ -59,7 +59,7 @@ npm run electron:dev
 npm run electron:build
 ```
 
-The built app will be in `release/win-unpacked/LuckyDangle.exe` (Windows).
+The built app will be in `release/win-unpacked/AmanDangle.exe` (Windows).
 
 ---
 

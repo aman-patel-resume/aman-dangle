@@ -1,5 +1,5 @@
 {
-  "name": "lucky-dangle",
+  "name": "aman-dangle",
   "private": true,
   "version": "1.0.0",
   "description": "Interactive physics-based hanging charm widget with a desktop overlay (Electron).",
@@ -39,8 +39,8 @@
     "zustand": "^5.0.0"
   },
   "build": {
-    "appId": "com.luckydangle.overlay",
-    "productName": "LuckyDangle",
+    "appId": "com.amandangle.overlay",
+    "productName": "AmanDangle",
     "asar": true,
     "files": [
       "dist/**/*",

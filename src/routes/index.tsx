@@ -13,7 +13,7 @@ export function HomePage() {
                 {/* Header Title */}
                 <div className="flex items-center justify-between border-b border-neutral-800/80 pb-4">
                     <div>
-                        <h1 className="font-serif text-2xl font-semibold text-amber-100">Lucky Dangle Control Dashboard</h1>
+                        <h1 className="font-serif text-2xl font-semibold text-amber-100">Aman Dangle Control Dashboard</h1>
                         <p className="text-xs text-neutral-400 mt-1">Live controls synchronized with your desktop overlay screen</p>
                     </div>
                 </div>

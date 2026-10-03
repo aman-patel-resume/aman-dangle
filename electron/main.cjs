@@ -1,4 +1,4 @@
-// electron/main.cjs — Main process for Lucky Dangle Desktop System.
+// electron/main.cjs — Main process for Aman Dangle Desktop System.
 const { app, BrowserWindow, ipcMain, screen, Tray, Menu, nativeImage, shell } = require("electron");
 const path = require("node:path");
 const http = require("node:http");
@@ -219,7 +219,7 @@ function showControlWindow() {
     controlWin = new BrowserWindow({
         width: 900,
         height: 720,
-        title: "Lucky Dangle Control Dashboard",
+        title: "Aman Dangle Control Dashboard",
         autoHideMenuBar: true,
         backgroundColor: "#06080c",
         webPreferences: {
@@ -252,7 +252,7 @@ function toggleVisibility() {
 
 function createTray() {
     tray = new Tray(createTrayIcon());
-    tray.setToolTip("Lucky Dangle Overlay");
+    tray.setToolTip("Aman Dangle Overlay");
     tray.setContextMenu(
         Menu.buildFromTemplate([
             { label: "Open Control Panel", click: showControlWindow },
@@ -261,7 +261,7 @@ function createTray() {
             { label: "Reset Position", click: resetPosition },
             { type: "separator" },
             {
-                label: "Quit Lucky Dangle",
+                label: "Quit Aman Dangle",
                 click: () => {
                     app.isQuitting = true;
                     app.quit();
