@@ -4,7 +4,7 @@ A physics-based interactive hanging charm desktop widget — built with React, V
 
 Your charm sits in a transparent overlay on top of your desktop. Grab it, swing it, hover over it, and watch it react with real rope physics.
 
-![Aman Dangle](public/icon.png)
+![Aman Dangle]
 
 ---
 
